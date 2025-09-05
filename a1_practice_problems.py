@@ -17,7 +17,7 @@ Make sure to complete the a1.py problems which should be AI generated.
 from typing import List, TypeVar
 
 
-def absolute(n: int) -> int:
+def absolute(n):
     """Gives the absolute value of the passed in number. Cannot use the built in
     function `abs`.
 
@@ -27,7 +27,10 @@ def absolute(n: int) -> int:
     Returns:
         the absolute value of the passed in number
     """
-    raise NotImplementedError("absolute")
+    if n < 0:
+        return -1 * n
+    else:
+        return n 
 
 
 def factorial(n: int) -> int:
