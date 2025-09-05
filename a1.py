@@ -31,8 +31,13 @@ I have some experience with Java. Can you create 5-7 practice problems that cove
 # =============================================================================
 
 """
-PROBLEM 1: [Problem Title/Description]
-[Copy the complete problem description from your AI assistant]
+PROBLEM 1: [Personal Information Calculator]
+[ Variables, basic data types, simple math
+Write a program that asks for a person's name, age, and favorite number. Then display:
+
+A greeting with their name
+How old they'll be in 10 years
+Their favorite number multiplied by 2]
 
 Example:
 Problem: Write a function called 'is_even' that takes an integer and returns 
