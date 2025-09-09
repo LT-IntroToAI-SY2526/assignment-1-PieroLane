@@ -95,7 +95,7 @@ elif grade >= 60:
 else:
     letter = "F"
     message = "Turn in your work."
-print(f"Your grade is a {letter}. {message}")
+print(f"Your grade is an {letter}. {message}")
 
 
 

@@ -136,11 +136,7 @@ if __name__ == "__main__":
     assert factorial(1) == 1, "factorial of 1 failed"
     assert factorial(0) == 1, "factorial of 0 failed"
     assert factorial(4) == 24, "factorial of 4 failed"
-    assert every_other([1, 2, 3, 4, 5]) == [
-        1,
-        3,
-        5,
-    ], "every_other of [1,2,3,4,5] failed"
+    assert every_other([1, 2, 3, 4, 5]) == [1,3,5,], "every_other of [1,2,3,4,5] failed"
     assert sum_list([1, 2, 3]) == 6, "sum_list of [1,2,3] failed"
     assert mean([1, 2, 3, 4, 5]) == 3, "mean of [1,2,3,4,5] failed"
     assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"
