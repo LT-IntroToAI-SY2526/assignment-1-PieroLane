@@ -98,6 +98,28 @@ else:
 print(f"Your grade is an {letter}. {message}")
 
 
+"PROBLEM 3: [Number Pattern Counter]"
+"""Will count up replacing multiples of 3 with FIZZ and will count backwards with your number"""
+
+
+number = int(input("Enter a number: "))
+print()
+print("Pattern 1 (counting up with Fizz):")
+for i in range(1, number + 1):
+    if i % 3 == 0:
+        print("Fizz", end=" ")
+    else:
+        print(i, end=" ")
+print()  
+print()
+print("Pattern 2 (even numbers counting down):")
+current = number
+while current >= 0:
+     if current % 2 == 0:
+        print(current, end=" ")
+        current = current - 1
+print()
+    
 
 
 
