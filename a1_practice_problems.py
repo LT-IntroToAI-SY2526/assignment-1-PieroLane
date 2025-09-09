@@ -43,7 +43,11 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    raise NotImplementedError("factorial")
+    result=1
+    for i in range(1,n+1):
+        result=result * i
+    # print(result)
+    return result
 
 
 T = TypeVar("T")
@@ -128,6 +132,9 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
 # this line causes the nested code to be skipped if the file is imported instead of run
 if __name__ == "__main__":
     assert absolute(-1) == 1, "absolute of -1 failed"
+    assert factorial(5) == 120, "factorial of 5 failed"
+    assert factorial(1) == 1, "factorial of 1 failed"
+    assert factorial(0) == 1, "factorial of 0 failed"
     assert factorial(4) == 24, "factorial of 4 failed"
     assert every_other([1, 2, 3, 4, 5]) == [
         1,
