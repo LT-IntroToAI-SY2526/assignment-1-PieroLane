@@ -20,7 +20,14 @@ Remember: The goal is to LEARN, not just get working code!
 
 """
 MY ORIGINAL AI PROMPT:
-[Paste the prompt you used to generate your problem set here]
+I'm learning Python basics in a high school programming class. I have some experience with [mention your previous programming language if any, or say 'I'm new to programming']. Can you create 5-7 practice problems that cover:
+> - Variables and basic data types
+> - Conditionals (if/elif/else)
+> - Loops (for and while)
+> - Functions
+> - Basic list operations
+> 
+> Make them progressively more challenging. Make sure each problem has clear instructions and example inputs/outputs.]
 
 Example: "I'm learning Python basics in a high school programming class. 
 I have some experience with Java. Can you create 5-7 practice problems that cover..."
@@ -47,6 +54,49 @@ Example inputs/outputs:
 - is_even(4) should return True
 - is_even(7) should return False
 """
+name = input("Enter your name: ")
+age_str = input("Enter your age: ") 
+favorite_number_str = input("Enter your favorite number: ")
+age = int(age_str)
+favorite_number = int(favorite_number_str)
+age_in_10_years = age + 10
+doubled_favorite = favorite_number * 2
+print("Hello " + name + "!")
+print("In 10 years, you'll be " + str(age_in_10_years) + " years old.")
+print("Your favorite number doubled is " + str(doubled_favorite) + ".")
+
+
+""""
+PROBLEM 2: [Grade Calculator]
+
+Write a program that takes a numerical grade (0-100) and converts it to a letter grade:
+
+90-100: A
+80-89: B
+70-79: C
+60-69: D
+Below 60: F
+
+Also include a message for each grade range.
+"""
+grade = int(input("Enter your grade: "))
+if grade >= 90:
+    letter = "A"
+    message = "Great work! Keep it up!"
+elif grade >= 80:
+    letter = "B"
+    message = "Could do better"
+elif grade >= 70:
+    letter = "C"
+    message = "Its alright"
+elif grade >= 60:
+    letter = "D"
+    message = "Study more."
+else:
+    letter = "F"
+    message = "Turn in your work."
+print(f"Your grade is a {letter}. {message}")
+
 
 
 
