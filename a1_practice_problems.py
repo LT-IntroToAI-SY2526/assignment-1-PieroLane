@@ -87,7 +87,7 @@ def sum_list(lst: List[int]) -> int:
     #return sumlst
     total = 0 
     for num in lst:
-        total += num #total=toal + num
+        total += num #total=total + num
     return total 
 
 
