@@ -119,11 +119,6 @@ while current >= 0:
         print(current, end=" ")
         current = current - 1
 print()
-    
-
-
-
-
 
 
 
