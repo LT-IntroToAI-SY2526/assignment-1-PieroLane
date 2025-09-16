@@ -118,7 +118,7 @@ def median(lst: List[int]) -> float:
         the median of the passed in list
     """
     if len(lst) % 2 ==1:
-        return lst[int(lst) // 2]
+        return lst[len(lst) // 2]
     else:
         return (lst[len(lst) // 2] + lst[len(lst) // 2 - 1]) / 2
 
@@ -155,8 +155,8 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
             current = "duck1"
             lst.pop(position)
         
-    if position == len(lst):
-        position = 0
+        if position == len(lst):
+            position = 0
 
     return lst
 
